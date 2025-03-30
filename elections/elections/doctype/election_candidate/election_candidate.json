@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{full_name}-{id_number}",
+ "creation": "2025-03-30 18:20:31.989508",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_information_section",
+  "full_name",
+  "email",
+  "phone_number",
+  "date_of_birth",
+  "column_break_jdne",
+  "id_number",
+  "id_attachment",
+  "employement_status",
+  "academic_qualification",
+  "academic_attachment",
+  "geo_location_details_section",
+  "county",
+  "column_break_mdvg",
+  "region",
+  "election_nomination_info_section",
+  "election_level",
+  "election_sub_level",
+  "position",
+  "column_break_uiqf",
+  "cv_attachment",
+  "nomination_attachment",
+  "candidacy_status_section",
+  "candidacy_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_jdne",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "id_attachment",
+   "fieldtype": "Attach",
+   "label": "Attach ID Document"
+  },
+  {
+   "fieldname": "employement_status",
+   "fieldtype": "Select",
+   "label": "Employement Status",
+   "options": "Employed\nUnemployed\nStudent"
+  },
+  {
+   "fieldname": "academic_qualification",
+   "fieldtype": "Select",
+   "label": "Academic Qualification",
+   "options": "Diploma\nDegree\nMasters"
+  },
+  {
+   "fieldname": "academic_attachment",
+   "fieldtype": "Attach",
+   "label": "Attach Qualification"
+  },
+  {
+   "fieldname": "geo_location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Geo Location Details"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Select",
+   "label": "County",
+   "options": "\nBaringo\nBomet\nBungoma\nBusia\nElgeyo Marakwet\nEmbu\nGarissa\nHoma Bay\nIsiolo\nKajiado\nKakamega\nKericho\nKiambu\nKilifi\nKirinyaga\nKisii\nKisumu\nKitui\nKwale\nLaikipia\nLamu\nMachakos\nMakueni\nMandera\nMarsabit\nMeru\nMigori\nMombasa\nMurang'a\nNairobi\nNakuru\nNandi\nNarok\nNyamira\nNyandarua\nNyeri\nSamburu\nSiaya\nTaita Taveta\nTana River\nTharaka-Nithi\nTrans Nzoia\nTurkana\nUasin Gishu\nVihiga\nWajir\nWest Pokot"
+  },
+  {
+   "fieldname": "column_break_mdvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "\nNorth Eastern\nUpper Eastern\nLower Eastern\nSouth Rift\nNorth Rift\nWest Kenya\nCentral\nCoast"
+  },
+  {
+   "fieldname": "election_nomination_info_section",
+   "fieldtype": "Section Break",
+   "label": "Election Nomination Info"
+  },
+  {
+   "fieldname": "election_level",
+   "fieldtype": "Select",
+   "label": "Election Level",
+   "options": "National\nRegional\nCounty"
+  },
+  {
+   "fieldname": "election_sub_level",
+   "fieldtype": "Select",
+   "label": "Election Sub Level",
+   "options": "NEC\nNYC\nMain\nYouth"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "Position Applied",
+   "options": "\nChairperson\nVice-Chairperson\nTreasurer\nSecretary\nCommittee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer"
+  },
+  {
+   "fieldname": "column_break_uiqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cv_attachment",
+   "fieldtype": "Attach",
+   "label": "Attach CV"
+  },
+  {
+   "fieldname": "nomination_attachment",
+   "fieldtype": "Attach",
+   "label": "Attach Nomination"
+  },
+  {
+   "fieldname": "candidacy_status_section",
+   "fieldtype": "Section Break",
+   "label": "Candidacy Status"
+  },
+  {
+   "fieldname": "candidacy_status",
+   "fieldtype": "Select",
+   "label": "Candidacy Status",
+   "options": "Pending\nRejected\nPass"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-30 18:51:25.133899",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Election Candidate",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

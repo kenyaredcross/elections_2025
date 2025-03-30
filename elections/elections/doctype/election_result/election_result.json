@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{election_level}-{position}-{county}",
+ "creation": "2025-03-30 18:36:47.679863",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pfmd",
+  "amended_from",
+  "election_level",
+  "election_sub_level",
+  "column_break_rfhn",
+  "region",
+  "county",
+  "position",
+  "section_break_amhl",
+  "returning_officer",
+  "results_form_attachment",
+  "column_break_ifpq",
+  "total_votes",
+  "spoilt_votes",
+  "section_break_ojjc",
+  "candidate_votes",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pfmd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Election Result",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "election_level",
+   "fieldtype": "Select",
+   "label": "Election Level",
+   "options": "National\nRegional\nCounty"
+  },
+  {
+   "fieldname": "election_sub_level",
+   "fieldtype": "Select",
+   "label": "Election Sub Level",
+   "options": "NEC\nNYC\nMain\nYouth"
+  },
+  {
+   "fieldname": "column_break_rfhn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "label": "Region",
+   "options": "\nNorth Eastern\nUpper Eastern\nLower Eastern\nSouth Rift\nNorth Rift\nWest Kenya\nCentral\nCoast"
+  },
+  {
+   "fieldname": "county",
+   "fieldtype": "Select",
+   "label": "County",
+   "options": "\nBaringo\nBomet\nBungoma\nBusia\nElgeyo Marakwet\nEmbu\nGarissa\nHoma Bay\nIsiolo\nKajiado\nKakamega\nKericho\nKiambu\nKilifi\nKirinyaga\nKisii\nKisumu\nKitui\nKwale\nLaikipia\nLamu\nMachakos\nMakueni\nMandera\nMarsabit\nMeru\nMigori\nMombasa\nMurang'a\nNairobi\nNakuru\nNandi\nNarok\nNyamira\nNyandarua\nNyeri\nSamburu\nSiaya\nTaita Taveta\nTana River\nTharaka-Nithi\nTrans Nzoia\nTurkana\nUasin Gishu\nVihiga\nWajir\nWest Pokot"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Select",
+   "label": "Position",
+   "options": "\nChairperson\nVice-Chairperson\nTreasurer\nSecretary\nCommittee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer"
+  },
+  {
+   "fieldname": "section_break_amhl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "returning_officer",
+   "fieldtype": "Link",
+   "label": "Returning Officer",
+   "options": "User"
+  },
+  {
+   "fieldname": "results_form_attachment",
+   "fieldtype": "Attach",
+   "label": "Results Form Attachment"
+  },
+  {
+   "fieldname": "column_break_ifpq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_votes",
+   "fieldtype": "Int",
+   "label": "Total Votes"
+  },
+  {
+   "fieldname": "spoilt_votes",
+   "fieldtype": "Int",
+   "label": "Spoilt Votes"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Approval\nApproved\nRejected"
+  },
+  {
+   "fieldname": "section_break_ojjc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "candidate_votes",
+   "fieldtype": "Table",
+   "label": "Candidate Votes",
+   "options": "Candidate Votes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-30 18:56:55.365280",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Election Result",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Election - Returning Officer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "position"
+}
