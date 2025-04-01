@@ -245,3 +245,13 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doctype_js = {
+    "Election Candidate": "public/js/election_candidate.js"
+}
+
+scheduler_events = {
+    "daily": [
+        "elections.elections.elections.api.espocrm_sync"
+    ]
+}
+

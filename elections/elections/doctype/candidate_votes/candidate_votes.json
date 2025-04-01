@@ -11,6 +11,7 @@
   "county",
   "election_level",
   "position",
+  "election_sub_level",
   "votes"
  ],
  "fields": [
@@ -19,8 +20,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Candidate",
-   "options": "Election Candidate",
-   "read_only": 1
+   "options": "Election Candidate"
   },
   {
    "fieldname": "id_number",
@@ -31,21 +31,22 @@
   },
   {
    "fieldname": "county",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "County",
-   "options": "\nBaringo\nBomet\nBungoma\nBusia\nElgeyo Marakwet\nEmbu\nGarissa\nHoma Bay\nIsiolo\nKajiado\nKakamega\nKericho\nKiambu\nKilifi\nKirinyaga\nKisii\nKisumu\nKitui\nKwale\nLaikipia\nLamu\nMachakos\nMakueni\nMandera\nMarsabit\nMeru\nMigori\nMombasa\nMurang'a\nNairobi\nNakuru\nNandi\nNarok\nNyamira\nNyandarua\nNyeri\nSamburu\nSiaya\nTaita Taveta\nTana River\nTharaka-Nithi\nTrans Nzoia\nTurkana\nUasin Gishu\nVihiga\nWajir\nWest Pokot"
+   "options": "County",
+   "read_only": 1
   },
   {
    "fieldname": "election_level",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Election Level",
-   "options": "National\nRegional\nCounty"
+   "read_only": 1
   },
   {
    "fieldname": "position",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Position",
    "options": "\nChairperson\nVice-Chairperson\nTreasurer\nSecretary\nCommittee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer",
@@ -55,19 +56,25 @@
    "fieldname": "votes",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Votes",
+   "label": "Votes"
+  },
+  {
+   "fieldname": "election_sub_level",
+   "fieldtype": "Data",
+   "label": "Election Sub Level",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-03-30 18:55:58.440696",
+ "modified": "2025-03-31 19:54:11.414633",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Candidate Votes",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []

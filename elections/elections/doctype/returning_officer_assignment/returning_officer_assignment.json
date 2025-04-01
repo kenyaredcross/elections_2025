@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:returning_officer",
+ "creation": "2025-03-31 08:03:28.362614",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "returning_officer",
+  "column_break_tpzc",
+  "active",
+  "section_break_mkde",
+  "area_assigned"
+ ],
+ "fields": [
+  {
+   "fieldname": "returning_officer",
+   "fieldtype": "Link",
+   "label": "Returning Officer",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "column_break_tpzc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mkde",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "area_assigned",
+   "fieldtype": "Table",
+   "label": "Area Assigned",
+   "options": "Returning Officer Area"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-31 20:36:33.470247",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Returning Officer Assignment",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "returning_officer"
+}
