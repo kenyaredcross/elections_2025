@@ -70,7 +70,6 @@
   {
    "fieldname": "id_number",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "ID Number"
   },
   {
@@ -113,7 +112,6 @@
   {
    "fieldname": "region",
    "fieldtype": "Select",
-   "in_list_view": 1,
    "label": "Region",
    "options": "coastal\nsouthrift\nwestkenya\nlowereastern\nnorthrift\nnortheastern\ncentral\nuppereastern"
   },
@@ -187,7 +185,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-31 19:19:46.238957",
+ "modified": "2025-04-02 05:51:06.305513",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Candidate",

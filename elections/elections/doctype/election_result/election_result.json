@@ -8,12 +8,12 @@
  "field_order": [
   "section_break_pfmd",
   "amended_from",
-  "region",
-  "county",
-  "column_break_rfhn",
   "election_level",
   "election_sub_level",
   "position",
+  "column_break_rfhn",
+  "region",
+  "county",
   "section_break_amhl",
   "results_form_attachment",
   "column_break_ifpq",
@@ -42,35 +42,41 @@
    "fieldname": "election_level",
    "fieldtype": "Select",
    "label": "Election Level",
-   "options": "\nNational\nRegional\nCounty Level Nominations"
+   "options": "\nCounty Level Nominations\nRegional\nNational",
+   "reqd": 1
   },
   {
    "fieldname": "election_sub_level",
    "fieldtype": "Select",
    "label": "Election Sub Level",
-   "options": "\nMain Board\nYouth Board\nNEC\nNYC"
+   "options": "\nMain Board\nYouth Board\nNEC\nNYC",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_rfhn",
    "fieldtype": "Column Break"
   },
   {
+   "default": "region",
    "fieldname": "region",
    "fieldtype": "Link",
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "read_only_depends_on": "eval:doc.election_level === 'County Level Nominations';"
   },
   {
    "fieldname": "county",
    "fieldtype": "Link",
    "label": "County",
-   "options": "County"
+   "options": "County",
+   "reqd": 1
   },
   {
    "fieldname": "position",
    "fieldtype": "Select",
    "label": "Position",
-   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer"
+   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_amhl",
@@ -106,7 +112,8 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Draft\nPending Approval\nApproved\nRejected"
+   "options": "Draft\nPending Approval\nApproved\nRejected",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_ojjc",
@@ -116,13 +123,14 @@
    "fieldname": "candidate_votes",
    "fieldtype": "Table",
    "label": "Candidate Votes",
-   "options": "Candidate Votes"
+   "options": "Candidate Votes",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-01 04:01:23.520513",
+ "modified": "2025-04-02 05:46:11.786923",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Result",
@@ -164,9 +172,13 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "position"
+ "title_field": "position",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
