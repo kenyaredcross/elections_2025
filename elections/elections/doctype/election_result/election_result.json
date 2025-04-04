@@ -15,10 +15,10 @@
   "region",
   "county",
   "section_break_amhl",
-  "results_form_attachment",
-  "column_break_ifpq",
   "total_votes",
   "spoilt_votes",
+  "column_break_ifpq",
+  "results_form_attachment",
   "section_break_ojjc",
   "candidate_votes",
   "status"
@@ -42,14 +42,14 @@
    "fieldname": "election_level",
    "fieldtype": "Select",
    "label": "Election Level",
-   "options": "\nCounty Level Nominations\nRegional\nNational",
+   "options": "\nCounty Level Nominations",
    "reqd": 1
   },
   {
    "fieldname": "election_sub_level",
    "fieldtype": "Select",
    "label": "Election Sub Level",
-   "options": "\nMain Board\nYouth Board\nNEC\nNYC",
+   "options": "\nMain Board\nYouth Board",
    "reqd": 1
   },
   {
@@ -57,12 +57,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "region",
    "fieldname": "region",
    "fieldtype": "Link",
    "label": "Region",
-   "options": "Region",
-   "read_only_depends_on": "eval:doc.election_level === 'County Level Nominations';"
+   "options": "Region"
   },
   {
    "fieldname": "county",
@@ -130,7 +128,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-02 05:46:11.786923",
+ "modified": "2025-04-03 11:10:22.589518",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Result",
