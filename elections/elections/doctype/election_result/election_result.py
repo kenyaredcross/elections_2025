@@ -6,4 +6,6 @@ from frappe.model.document import Document
 
 
 class ElectionResult(Document):
-	pass
+    def before_save(self):
+        if self.county and self.position:
+            self.title = f"{self.county.title()} - {self.position}"

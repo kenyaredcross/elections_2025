@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{election_level}-{position}-{county}",
+ "autoname": "format:-{position}",
  "creation": "2025-03-30 18:36:47.679863",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,10 +14,12 @@
   "column_break_rfhn",
   "region",
   "county",
+  "title",
   "section_break_amhl",
   "total_votes",
   "spoilt_votes",
   "column_break_ifpq",
+  "total_valid_votes",
   "results_form_attachment",
   "section_break_ojjc",
   "candidate_votes",
@@ -73,7 +75,7 @@
    "fieldname": "position",
    "fieldtype": "Select",
    "label": "Position",
-   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer",
+   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member",
    "reqd": 1
   },
   {
@@ -95,7 +97,7 @@
    "fieldname": "total_votes",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Total Votes",
+   "label": "Total Votes Cast",
    "options": "col-xs-12\n",
    "reqd": 1
   },
@@ -103,12 +105,13 @@
    "fieldname": "spoilt_votes",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Spoilt Votes",
+   "label": "Total Rejected Votes",
    "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Status",
    "options": "Draft\nPending Approval\nApproved\nRejected",
    "read_only": 1
@@ -123,12 +126,25 @@
    "label": "Candidate Votes",
    "options": "Candidate Votes",
    "reqd": 1
+  },
+  {
+   "fieldname": "total_valid_votes",
+   "fieldtype": "Int",
+   "label": "Total Valid Votes",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-03 11:10:22.589518",
+ "modified": "2025-04-15 05:19:45.330810",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Result",
@@ -175,7 +191,7 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "position",
+ "title_field": "title",
  "track_changes": 1,
  "track_seen": 1,
  "track_views": 1

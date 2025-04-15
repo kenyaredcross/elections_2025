@@ -20,12 +20,12 @@
    "fieldname": "candidate",
    "fieldtype": "Link",
    "label": "Candidate",
-   "options": "Election Candidate"
+   "options": "Election Candidate",
+   "read_only": 1
   },
   {
    "fieldname": "id_number",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "ID Number",
    "read_only": 1
   },
@@ -47,7 +47,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Position",
-   "options": "\nChairperson\nVice-Chairperson\nTreasurer\nSecretary\nCommittee Member\nGovernor\n1st Deputy Governor\n2nd Deputy Governor\nHon Treasurer",
    "read_only": 1
   },
   {
@@ -66,13 +65,14 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-02 06:02:38.291831",
+ "modified": "2025-04-15 14:04:19.240697",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Candidate Votes",
