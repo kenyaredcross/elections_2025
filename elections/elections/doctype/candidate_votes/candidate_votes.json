@@ -53,7 +53,8 @@
    "fieldname": "votes",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Votes"
+   "label": "Votes",
+   "reqd": 1
   },
   {
    "fieldname": "election_sub_level",
@@ -69,10 +70,11 @@
    "read_only": 1
   }
  ],
+ "in_create": 1,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-04-15 14:04:19.240697",
+ "modified": "2025-04-16 14:02:51.509973",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Candidate Votes",

@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Rejected\"",
+ "creation": "2025-04-16 13:39:39.782604",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Election Result",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello, \n\nNew Election Result submission for {{ doc.county }} county {{ doc.position }} position pending your approval. \n\nPlease login to the elections portal to approve: https://elections.icha.ne  \n\nSubmitted by:  {{ frappe.session.user }} .",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2025-04-16 13:39:39.782604",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Rejection Alert - Election Submission",
+ "owner": "Administrator",
+ "recipients": [
+  {}
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "KRCS Elections",
+ "sender_email": "noreply@redcross.or.ke",
+ "set_property_after_alert": "",
+ "subject": "Rejected Elections Submission for {{ doc.name }}"
+}
