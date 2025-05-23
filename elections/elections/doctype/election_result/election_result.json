@@ -15,14 +15,38 @@
   "region",
   "county",
   "title",
-  "section_break_amhl",
-  "total_votes",
-  "spoilt_votes",
-  "column_break_ifpq",
-  "total_valid_votes",
-  "results_form_attachment",
-  "section_break_ojjc",
-  "candidate_votes",
+  "chairperson_section",
+  "total_votes_chairperson",
+  "rejected_votes_chairperson",
+  "column_break_imla",
+  "valid_votes_chairperson",
+  "section_break_eijs",
+  "votes_chairperson",
+  "vice_chairperson_section",
+  "total_votes_vicechairperson",
+  "valid_votes_vicechairperson",
+  "column_break_lkfi",
+  "rejected_votes_vicechairperson",
+  "section_break_ensh",
+  "votes_vicechairperson",
+  "treasurer_section",
+  "total_votes_treasurer",
+  "rejected_votes_treasurer",
+  "column_break_vrmb",
+  "valid_votes_treasurer",
+  "section_break_blqn",
+  "votes_tresurer",
+  "committee_member_section",
+  "v",
+  "total_votes_committee",
+  "rejected_votes_committee",
+  "column_break_pdhr",
+  "valid_votes_committe",
+  "section_break_xewt",
+  "votes_committee",
+  "section_break_yvgd",
+  "attach_election_results_form",
+  "column_break_rdjm",
   "status"
  ],
  "fields": [
@@ -41,10 +65,12 @@
    "search_index": 1
   },
   {
+   "default": "Regional",
    "fieldname": "election_level",
    "fieldtype": "Select",
    "label": "Election Level",
-   "options": "\nCounty Level Nominations",
+   "options": "Regional",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -67,70 +93,16 @@
   {
    "fieldname": "county",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "County",
-   "options": "County",
-   "reqd": 1
+   "options": "County"
   },
   {
    "fieldname": "position",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Position",
-   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member",
-   "reqd": 1
-  },
-  {
-   "fieldname": "section_break_amhl",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "results_form_attachment",
-   "fieldtype": "Attach",
-   "in_list_view": 1,
-   "label": "Results Form Attachment",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_ifpq",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "total_votes",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Total Votes Cast",
-   "options": "col-xs-12\n",
-   "reqd": 1
-  },
-  {
-   "fieldname": "spoilt_votes",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Total Rejected Votes",
-   "reqd": 1
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Draft\nPending Approval\nApproved\nRejected",
-   "read_only": 1
-  },
-  {
-   "fieldname": "section_break_ojjc",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "candidate_votes",
-   "fieldtype": "Table",
-   "label": "Candidate Votes",
-   "options": "Candidate Votes",
-   "reqd": 1
-  },
-  {
-   "fieldname": "total_valid_votes",
-   "fieldtype": "Int",
-   "label": "Total Valid Votes",
-   "reqd": 1
+   "options": "\nChairperson\nVice Chairperson\nTreasurer\nSecretary\nCommitee Member"
   },
   {
    "fieldname": "title",
@@ -138,12 +110,190 @@
    "hidden": 1,
    "label": "Title",
    "read_only": 1
+  },
+  {
+   "fieldname": "chairperson_section",
+   "fieldtype": "Section Break",
+   "label": "Chairperson"
+  },
+  {
+   "fieldname": "total_votes_chairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Votes Cast",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rejected_votes_chairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rejected Votes",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valid_votes_chairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Valid Votes ",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "votes_chairperson",
+   "fieldtype": "Table",
+   "label": "Votes Chairperson",
+   "options": "Votes Chairperson"
+  },
+  {
+   "fieldname": "vice_chairperson_section",
+   "fieldtype": "Section Break",
+   "label": "Vice Chairperson"
+  },
+  {
+   "fieldname": "total_votes_vicechairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Votes Cast",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valid_votes_vicechairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Valid Votes ",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rejected_votes_vicechairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rejected Votes",
+   "options": "col-xs-12\n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "treasurer_section",
+   "fieldtype": "Section Break",
+   "label": "Treasurer"
+  },
+  {
+   "fieldname": "total_votes_treasurer",
+   "fieldtype": "Int",
+   "label": "Total Votes Cast"
+  },
+  {
+   "fieldname": "rejected_votes_treasurer",
+   "fieldtype": "Int",
+   "label": "Rejected Votes"
+  },
+  {
+   "fieldname": "valid_votes_treasurer",
+   "fieldtype": "Int",
+   "label": "Valid Votes"
+  },
+  {
+   "fieldname": "votes_tresurer",
+   "fieldtype": "Table",
+   "label": "Votes Tresurer",
+   "options": "Votes Treasurer"
+  },
+  {
+   "fieldname": "committee_member_section",
+   "fieldtype": "Section Break",
+   "label": "Committee Member"
+  },
+  {
+   "fieldname": "v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_votes_committee",
+   "fieldtype": "Int",
+   "label": "Total Votes Cast"
+  },
+  {
+   "fieldname": "rejected_votes_committee",
+   "fieldtype": "Int",
+   "label": "Rejected Votes"
+  },
+  {
+   "fieldname": "valid_votes_committe",
+   "fieldtype": "Int",
+   "label": "Valid Votes"
+  },
+  {
+   "fieldname": "votes_committee",
+   "fieldtype": "Table",
+   "label": "Votes Committee",
+   "options": "Votes Treasurer"
+  },
+  {
+   "fieldname": "section_break_yvgd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attach_election_results_form",
+   "fieldtype": "Attach",
+   "label": "Attach Election Results Form"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nRejected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rdjm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "votes_vicechairperson",
+   "fieldtype": "Table",
+   "label": "Votes Vice - Chairperson",
+   "options": "Votes Chairperson"
+  },
+  {
+   "fieldname": "column_break_imla",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_eijs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_lkfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ensh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vrmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_blqn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_pdhr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xewt",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-17 04:18:26.334109",
+ "modified": "2025-05-22 10:50:21.418013",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Result",
@@ -186,7 +336,6 @@
   }
  ],
  "protect_attached_files": 1,
- "quick_entry": 1,
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
