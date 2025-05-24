@@ -2,8 +2,6 @@ import frappe
 from frappe import _
 from elections.elections.api.utils import get_userScope
 
-#Test Comment
-
 @frappe.whitelist()
 def get_eligible_candidates_filtered (election_level=None,election_sub_level=None,county=None,region=None,position=None):
     
