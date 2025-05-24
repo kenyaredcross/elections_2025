@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-24 11:32:28.240457",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate",
+  "fullname",
+  "votes_treasurer"
+ ],
+ "fields": [
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate",
+   "options": "Election Candidate"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fullname"
+  },
+  {
+   "fieldname": "votes_treasurer",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Votes Treasurer",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-24 11:33:29.975414",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Results Treasurer",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

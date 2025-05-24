@@ -144,7 +144,7 @@
    "fieldname": "votes_chairperson",
    "fieldtype": "Table",
    "label": "Votes Chairperson",
-   "options": "Votes Chairperson"
+   "options": "Results Chairperson"
   },
   {
    "fieldname": "vice_chairperson_section",
@@ -199,7 +199,7 @@
    "fieldname": "votes_tresurer",
    "fieldtype": "Table",
    "label": "Votes Tresurer",
-   "options": "Votes Treasurer"
+   "options": "Results Treasurer"
   },
   {
    "fieldname": "committee_member_section",
@@ -229,7 +229,7 @@
    "fieldname": "votes_committee",
    "fieldtype": "Table",
    "label": "Votes Committee",
-   "options": "Votes Treasurer"
+   "options": "Results Committee"
   },
   {
    "fieldname": "section_break_yvgd",
@@ -255,7 +255,7 @@
    "fieldname": "votes_vicechairperson",
    "fieldtype": "Table",
    "label": "Votes Vice - Chairperson",
-   "options": "Votes Chairperson"
+   "options": "Results Vicechairperson"
   },
   {
    "fieldname": "column_break_imla",
@@ -293,7 +293,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-22 10:50:21.418013",
+ "modified": "2025-05-24 11:36:45.807071",
  "modified_by": "Administrator",
  "module": "Elections",
  "name": "Election Result",

@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-24 11:30:56.106460",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "candidate",
+  "votes_vice_chairperson"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Candidate",
+   "options": "Election Candidate"
+  },
+  {
+   "fieldname": "votes_vice_chairperson",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Votes Vice Chairperson",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-24 11:32:09.972744",
+ "modified_by": "Administrator",
+ "module": "Elections",
+ "name": "Results Vicechairperson",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
