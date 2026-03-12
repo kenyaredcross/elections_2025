@@ -251,7 +251,7 @@ doctype_js = {
 
 scheduler_events = {
     "daily": [
-        "elections.elections.elections.api.espocrm_sync"
+        "elections.elections.api.espocrm_sync"
     ]
 }
 
